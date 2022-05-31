@@ -381,11 +381,11 @@ body {
     	height: 300px;
     }
     .item-billbord__image {
-    height: calc(100vh - 71px);
+   height: 510px;
 }
 .item-billbord {
-    font-size: 13px;
-    line-height: 20px;
+    font-size: 14px;
+    line-height: 21px;
 }
 .item-billbord__content {
     padding-top: 45px;
