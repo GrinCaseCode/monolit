@@ -358,8 +358,15 @@
 .item-billbord__content {
     padding-bottom: 60px;
     }
-    .item-billbord .btn-main {
-    margin-top: 70px;
+.item-billbord .btn-main {
+    margin-top: 115px;
+}
+.item-billbord__content {
+	padding-top: 45px;
+	align-items: flex-start;
+}
+.item-billbord__content .title-big {
+	min-height: 94px;
 }
 }
 
@@ -409,8 +416,8 @@
 		font-size: 14px;
 		line-height: 21px;
 	}
-	.item-billbord__content {
-		padding-top: 45px;
+	.item-billbord__content .title-big {
+		min-height: 80px;
 	}
 }
 
