@@ -296,6 +296,10 @@
 	.header__wrap .logo {
 		margin: 0 auto;
 	}
+	.header__contacts p {
+		margin-bottom: 15px;
+		line-height: 22px;
+	}
 }
 
 /* Small Devices, Tablets */
