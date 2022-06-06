@@ -105,8 +105,10 @@
 		font-size: 30px;
 		margin-bottom: 5px;
 	}
+	.info-billord__flex p,
 	.info-billord__descr {
 		font-size: 12px;
+		    line-height: 18px;
 	}
 	.info-billord__flex p {
 		font-size: 13px;
