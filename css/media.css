@@ -287,6 +287,15 @@
 	.menu > li {
 		padding: 0;
 	}
+	.phone-mob {
+		display: inline-block;
+	}
+	.header__wrap .header__right {
+		display: none;
+	}
+	.header__wrap .logo {
+		margin: 0 auto;
+	}
 }
 
 /* Small Devices, Tablets */
@@ -307,6 +316,7 @@
 		line-height: 21px;
 		height: 60px;
 		min-width: 280px;
+		margin-top: 0;
 	}
 	.bottom-billbord .controls-slider {
 		width: 100%;
@@ -358,15 +368,16 @@
 .item-billbord__content {
     padding-bottom: 60px;
     }
-.item-billbord .btn-main {
-    margin-top: 115px;
-}
 .item-billbord__content {
 	padding-top: 45px;
-	align-items: flex-start;
+	text-align: center;
+	align-items: center;
 }
 .item-billbord__content .title-big {
 	min-height: 94px;
+}
+.item-billbord__content .title-big {
+	margin-bottom: 25px;
 }
 }
 
