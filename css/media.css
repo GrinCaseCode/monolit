@@ -125,7 +125,7 @@
 		padding: 14px 27px;
 	}
 	.wrapper {
-		padding-top: 91px;
+		padding-top: 65px;
 	}
 }
 /* Large Devices, Wide Screens */
@@ -305,10 +305,10 @@
 		margin-bottom: 15px;
 	}
 	.header {
-		padding: 15px 0;
+		padding: 12px 0;
 	}
 	.wrapper {
-		padding-top: 71px;
+		padding-top: 65px;
 	}
 	.menu > li {
 		padding: 0;

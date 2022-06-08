@@ -46,7 +46,7 @@ h1,h2,h3,h4,h5,h6 {
 	font-weight: normal;
 }
 .wrapper {
-	padding-top: 99px;
+	padding-top: 73px;
 	overflow: hidden;
 }
 a {
@@ -76,7 +76,7 @@ form {
 	margin: 0;
 }
 .header {
-	padding: 25px 0;
+	padding: 12px 0;
 	background-color: #efefef;
 	position: fixed;
 	top: 0;
@@ -156,7 +156,7 @@ color: #0080C6;
 .item-billbord__image {
 	height: 890px;
 	min-height: 473px;
-	max-height: calc(100vh - 99px);
+	max-height: calc(100vh - 73px);
 	display: block;
 	position: relative;
 	z-index: 1;
