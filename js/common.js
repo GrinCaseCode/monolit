@@ -85,7 +85,7 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 			{
 				breakpoint: 480,
 				settings: {
-					arrows: false,
+		
 				}
 			}
 			]
