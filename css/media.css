@@ -471,6 +471,9 @@
 	height: 60px;
 	font-size: 16px;
 }
+.header__wrap .logo {
+	margin: 0 auto;
+}
 }
 
 /* Small Devices, Tablets */
@@ -531,7 +534,7 @@
 		display: none;
 	}
 	.item-billbord__image {
-		height: 230px;
+		height: 260px;
 		min-height: initial;
 		max-height: initial;
 	}
@@ -547,33 +550,31 @@
 	.item-billbord__content .title-big {
 		margin-bottom: 25px;
 	}
-	.info-billord {
+.info-billord__flex {
 		display: block;
+	}
+	.info-billord__icon {
 		margin: 0;
+		margin-bottom: 15px;
 	}
-	.bottom-billbord {
+	.info-billord {
+		margin: 0 -15px;
+	}
+	.info-billord__value {
+		font-size: 30px;
+		margin-bottom: 6px;
 		display: block;
 	}
-	.info-billord__item {
-		padding: 24px 20px !important;
-		min-height: 115px;
-		margin-top: 15px;
-		margin-right: 0;
-		justify-content: center;
-		display: flex;
-		flex-direction: column;
-		text-align: center;
+	.info-billord__title {
+		font-size: 19px;
+		margin-bottom: 3px;
+		line-height: 21px;
 	}
-	.info-billord__flex p {
-		font-size: inherit;
-		text-align: left;
-	}
-	.info-billord__flex p, .info-billord__descr {
-		font-size: 16px;
-		line-height: 20px;
+	.info-billord sup {
+		font-size: 10px;
 	}
 	.bottom-billbord .controls-slider {
-		margin-bottom: 30px;
+		margin-bottom: 15px;
 	}
 	.card .title-section {
 		padding-bottom: 20px;
@@ -638,6 +639,16 @@
 	padding: 0;
 	padding-bottom: 40px;
 	background-image: none;
+}
+.item-billbord__content .title-big {
+    min-height: 62px;
+    margin-bottom: 20px;
+}
+.item-billbord {
+	text-align: center;
+}
+.info-billord__icon img {
+    max-width: 35px;
 }
 }
 
@@ -727,6 +738,16 @@
 .block-form__wrap {
 	padding: 0;
 }
+.info-billord__title {
+    font-size: 15px;
+    margin-bottom: 2px;
+    line-height: 20px;
+}
+.info-billord__value {
+    font-size: 30px;
+}
+
+
 }
 
 /* Custom, iPhone Retina */

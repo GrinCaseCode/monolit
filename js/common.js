@@ -21,7 +21,6 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 	//плавный скролл
 	$(".navigat li a").mPageScroll2id();
 
-
 	//кнопка sandwich
 	$(".btn_nav").click(function() {
 		$(".sandwich").toggleClass("active");
@@ -62,7 +61,7 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 			{
 				breakpoint: 992,
 				settings: {
-					arrows: false,
+					
 				}
 			}
 			]
