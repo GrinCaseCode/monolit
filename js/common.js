@@ -85,7 +85,7 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 			{
 				breakpoint: 480,
 				settings: {
-		
+
 				}
 			}
 			]
@@ -118,8 +118,8 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 		arrows: true,
 		dots: false,
 		infinite: true,
-		  vertical: true,
-  verticalSwiping: true,
+		vertical: true,
+		verticalSwiping: true,
 		slidesToShow: 3,
 		slidesToScroll: 1,
 		asNavFor: '.slider-for',
@@ -128,14 +128,32 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 		prevArrow: '<div class="slick-prev slick-arrow"><svg width="18" height="33" viewBox="0 0 18 33" fill="#BDBDBD" xmlns="http://www.w3.org/2000/svg"><path d="M17.8596 32.3017C17.8596 32.1229 17.7891 31.9441 17.6488 31.8079L1.87731 16.4996L17.6488 1.19206C17.9301 0.919005 17.9301 0.477654 17.6488 0.204604C17.3674 -0.0684465 16.9127 -0.0684465 16.6314 0.204604L0.351253 16.0059C0.0699283 16.279 0.0699283 16.7203 0.351253 16.9934L16.6314 32.7947C16.9127 33.0677 17.3674 33.0677 17.6488 32.7947C17.7898 32.6592 17.8596 32.4804 17.8596 32.3017Z" fill="#BDBDBD"/></svg><div/>',
 		nextArrow: '<div class="slick-next slick-arrow"><svg width="18" height="33" viewBox="0 0 18 33" fill="#BDBDBD" xmlns="http://www.w3.org/2000/svg"><path d="M0.0381227 32.3017C0.0381227 32.1229 0.108637 31.9441 0.24894 31.8079L16.0204 16.4996L0.248941 1.19206C-0.0323849 0.919005 -0.0323849 0.477654 0.248941 0.204604C0.530266 -0.0684465 0.984987 -0.0684465 1.26631 0.204604L17.5465 16.0059C17.8278 16.279 17.8278 16.7203 17.5465 16.9934L1.26631 32.7947C0.984986 33.0677 0.530264 33.0677 0.24894 32.7947C0.107916 32.6592 0.0381227 32.4804 0.0381227 32.3017Z" fill="#BDBDBD"/></svg><div/>',
 		responsive: [
-			{
-				breakpoint: 768,
-				settings: {
-			 vertical: false,
-  verticalSwiping: false,
-				}
+		{
+			breakpoint: 768,
+			settings: {
+				vertical: false,
+				verticalSwiping: false,
 			}
-			]
+		}
+		]
+	});
+
+	$('.tabs').slick({
+		arrows: true,
+		dots: false,
+		infinite: false,
+		variableWidth: true,
+		mobileFirst: true,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		prevArrow: '<div class="slick-prev slick-arrow"><svg width="18" height="33" viewBox="0 0 18 33" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.8596 32.3017C17.8596 32.1229 17.7891 31.9441 17.6488 31.8079L1.87731 16.4996L17.6488 1.19206C17.9301 0.919005 17.9301 0.477654 17.6488 0.204604C17.3674 -0.0684465 16.9127 -0.0684465 16.6314 0.204604L0.351253 16.0059C0.0699283 16.279 0.0699283 16.7203 0.351253 16.9934L16.6314 32.7947C16.9127 33.0677 17.3674 33.0677 17.6488 32.7947C17.7898 32.6592 17.8596 32.4804 17.8596 32.3017Z" fill="white"/></svg><div/>',
+		nextArrow: '<div class="slick-next slick-arrow"><svg width="18" height="33" viewBox="0 0 18 33" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.0381227 32.3017C0.0381227 32.1229 0.108637 31.9441 0.24894 31.8079L16.0204 16.4996L0.248941 1.19206C-0.0323849 0.919005 -0.0323849 0.477654 0.248941 0.204604C0.530266 -0.0684465 0.984987 -0.0684465 1.26631 0.204604L17.5465 16.0059C17.8278 16.279 17.8278 16.7203 17.5465 16.9934L1.26631 32.7947C0.984986 33.0677 0.530264 33.0677 0.24894 32.7947C0.107916 32.6592 0.0381227 32.4804 0.0381227 32.3017Z" fill="white"/></svg><div/>',
+		responsive: [
+		 {
+                  breakpoint: 768,
+                  settings: 'unslick'
+          }
+		]
 	});
 
 
@@ -144,18 +162,18 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 		event.preventDefault();
 		$(this).parent().parent().find("li").removeClass('active');
 		$(this).parent().addClass('active');
-		$(this).parent().parent().siblings(".tab-container").find(".tab-pane").fadeOut(0);
+		$(".tab-pane").fadeOut(300);
 		var selectTab = $(this).attr("href");
-		$(selectTab).fadeIn(200);
+		$(selectTab).fadeIn(600);
 	}); 
 
 
- $(".item-question__head").click(function() {
-  $(this).parent().toggleClass("active");
-  $(this).siblings().slideToggle(200);
-  $(this).parent().siblings(".item-question").removeClass("active");
-  $(this).parent().siblings(".item-question").find(".item-question__content").slideUp(200);
-});
+	$(".item-question__head").click(function() {
+		$(this).parent().toggleClass("active");
+		$(this).siblings().slideToggle(200);
+		$(this).parent().siblings(".item-question").removeClass("active");
+		$(this).parent().siblings(".item-question").find(".item-question__content").slideUp(200);
+	});
 
 	$(".title-dropdown").click(function() {
 		$(this).toggleClass("active");
