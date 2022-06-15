@@ -1104,7 +1104,7 @@ border-radius: 2px;
 	display: block;
 }
 .tabs_marquises li {
-	flex-grow: 1
+	flex: 1;
 }
 .slider-nav {
 	padding: 30px 0;

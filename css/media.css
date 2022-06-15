@@ -178,6 +178,9 @@
 .item-question {
 	margin-bottom: 30px;
 }
+.tabs_marquises {
+	font-size: 13px;
+}
 }
 @media only screen and (max-width : 1350px) {
 	.menu > li {
@@ -709,11 +712,34 @@
 		margin-bottom: 25px;
 	}
 	.tabs {
-		padding: 0 20px;
+		padding: 0;	
 		white-space: nowrap;
+		margin-left: -15px;
 		margin-right: -15px;
-		overflow: auto;
-		justify-content: flex-start;	
+		display: block;
+	}
+	.tabs .slick-arrow {
+		height: 41px;
+		width: 51px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+	}
+	.tabs .slick-prev {
+				background: linear-gradient(to left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+	}
+	.tabs .slick-arrow.slick-disabled {
+		visibility: hidden;
+	}
+	.tabs .slick-arrow svg {
+		max-width: 13px;
+	}
+	.tabs .slick-arrow path {
+		fill: #007AC2;
+	}
+	.tabs .slick-list {
+		padding-left: 15px;
 	}
 	.tabs::-webkit-scrollbar {
 		-webkit-appearance: none;
@@ -857,6 +883,9 @@
 .text-main {
     font-size: 14px;
     line-height: 24px;
+}
+.container {
+	max-width: 100%;
 }
 }
 
